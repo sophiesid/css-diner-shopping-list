@@ -1,0 +1,103 @@
+*{
+	transition: all .1s ease-in;
+	margin: 0;
+}
+html {
+	height: 100%;
+	}
+html, body {
+	min-height: 100%;
+}
+body{
+	font-family: 'Trebuchet MS', Trebuchet,  Arial, sans-serif;
+	background-color: #3b3f45;
+	font-size: 25px;
+	color: #FFF;
+	line-height: 1.429;
+	border: 30px solid #fff;
+}
+.ba-header{
+	padding: 20px 0 20px;
+	font-size: 23px;
+	background-color: #4a4f56;
+	color: #eb7e7f;
+	text-align: center;
+	max-width: 100%;
+}
+.ba-header h1{
+	font-size: 35px;
+}
+.ba-container{
+	padding: 40px 20px;
+	max-width: 700px;
+	margin: 0 auto;
+}
+.ba-shopping-list{
+	background-color: #88839e;
+	list-style-type: none;
+	margin: 0 auto;
+	padding: 0px;
+}
+.ba-shopping-list label{
+	display: block;
+	padding: 15px;
+	border-top: 3px solid transparent;
+	border-bottom: 3px solid transparent;
+	cursor: pointer;
+}
+.ba-description{
+	font-size: 15px;
+	color: #cdcbd2;
+	}
+.ba-shopping-list li:nth-child(2n) {
+	background-color:#7a7593;
+}
+.ba-shopping-list label:hover{
+	border-top: 3px solid #fff;
+	border-bottom: 3px solid #fff;
+	background-color: #65677a;
+}
+.ba-shopping-list label:active{
+	background-color: #d98279;
+}
+.ba-shopping-list [type="checkbox"]{
+	display: none;
+}
+.ba-shopping-list label:before{
+	content: " ";
+	display: inline-block;
+	width: 26px;
+	height: 26px;
+	vertical-align: middle;
+	position: relative;
+	top: -2px;
+	margin-right: 10px;
+	border: 2px solid #fff;
+}
+.ba-shopping-list [type="checkbox"]:checked + label:before{
+	background: #FFF url("../check.png") 50px 50px;
+}
+.ba-shopping-list input[type="checkbox"]:checked ~ label{
+	color: #a09fb5;
+	text-decoration: line-through;
+}
+.ba-shopping-list input[type="checkbox"]:checked ~ label .ba-description{
+	color: #a09fb5;
+	text-decoration: line-through;
+}
+.ba-description:before {
+	content: "(";
+}
+.ba-description:after {
+	content: ")";
+}
+.ba-footer{
+display: block;
+padding: 20px 0 20px;
+font-size: 23px;
+background-color: #4a4f56;
+color: #eb7e7f;
+text-align: center;
+max-width: 100%;
+margin-top: 40px;
+}
